@@ -1,0 +1,96 @@
+Body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  width: 100vh;
+  height: 100vh;
+}
+
+.social_bar_global {
+  position: fixed;
+  left: 0;
+  top: 270px;
+}
+
+.social_bar_global .social_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
+}
+
+.social_bar_global .social_bar li {
+  list-style-type: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  /* Transition de type ease */
+}
+
+.social_bar_global .social_bar li a {
+  text-decoration: none;
+}
+
+.social_bar_global .social_bar li:hover .text {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.social_bar_global .social_bar .fab, .social_bar_global .social_bar .fas {
+  font-size: 300%;
+  color: yellow;
+}
+
+.social_bar_global .social_bar .text {
+  background: black;
+  text-align: center;
+  position: relative;
+  left: -50px;
+  opacity: 0;
+  display: inline-block;
+  width: 100px;
+  height: 48px;
+  font-family: cursive;
+  color: white;
+  font-size: 1.2em;
+}
+
+.social_bar_global .social_bar .text p {
+  position: relative;
+  top: -9px;
+}
+
+.social_bar_global .social_bar .logo1, .social_bar_global .social_bar .logo2, .social_bar_global .social_bar .logo3, .social_bar_global .social_bar .logo4, .social_bar_global .social_bar .logo5 {
+  background-color: black;
+  padding-right: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

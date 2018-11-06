@@ -1,15 +1,19 @@
 Body {
   margin: 0;
   padding: 0;
-  background-color: black;
-  width: 100vh;
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social_bar_global {
   position: fixed;
   left: 0;
   top: 270px;
+  z-index: 9999;
 }
 
 .social_bar_global .social_bar {
@@ -86,11 +90,166 @@ Body {
 
 .social_bar_global .social_bar .text p {
   position: relative;
-  top: -9px;
+  top: 10px;
 }
 
 .social_bar_global .social_bar .logo1, .social_bar_global .social_bar .logo2, .social_bar_global .social_bar .logo3, .social_bar_global .social_bar .logo4, .social_bar_global .social_bar .logo5 {
   background-color: black;
   padding-right: 5px;
+}
+
+.featured_global {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featured_global .btn_global {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 20px 0 0 0;
+  position: relative;
+  right: 13px;
+}
+
+.featured_global .btn_global .btnAll {
+  background-color: #FE4240 !important;
+  color: white;
+}
+
+.featured_global .btn_global .btnFeatured {
+  background-color: #F3F1F2;
+  width: 100px;
+  height: 35px;
+  font-size: 1.2em;
+  text-align: center;
+  margin-left: 3px;
+}
+
+.featured_global .btn_global .btnFeatured:hover {
+  background-color: #FE4240;
+  color: white;
+}
+
+.featured_global .slideAction,
+.featured_global .slidePolicier,
+.featured_global .slideAction2,
+.featured_global .slidePolicier2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  width: 100%;
+}
+
+.featured_global .slideAction .card_featured,
+.featured_global .slidePolicier .card_featured,
+.featured_global .slideAction2 .card_featured,
+.featured_global .slidePolicier2 .card_featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 5px 0px 5px;
+  text-align: center;
+  width: 10rem;
+}
+
+.featured_global .slideAction .card_featured h3,
+.featured_global .slidePolicier .card_featured h3,
+.featured_global .slideAction2 .card_featured h3,
+.featured_global .slidePolicier2 .card_featured h3 {
+  font-size: 1.2rem;
+}
+
+.featured_global .slideAction .card_featured p,
+.featured_global .slidePolicier .card_featured p,
+.featured_global .slideAction2 .card_featured p,
+.featured_global .slidePolicier2 .card_featured p {
+  position: relative;
+  right: 73px;
+}
+
+.titre-section {
+  border-left: 7px solid #FE4240;
+  padding-left: 20px;
+  position: relative;
+  right: 150px;
+}
+
+.plusdefilm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btnPlus {
+  background-color: #FE4240;
+  color: white !important;
+  width: 170px;
+  height: 35px;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 450px) {
+  .featured_global {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .featured_global .titre-section {
+    border-left: 7px solid #FE4240;
+    padding-left: 20px;
+    position: relative;
+    right: 0;
+    font-size: 1.4em;
+  }
+  .featured_global .slideAction,
+  .featured_global .slidePolicier,
+  .featured_global .slideAction2,
+  .featured_global .slidePolicier2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row wrap;
+            flex-direction: row wrap;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

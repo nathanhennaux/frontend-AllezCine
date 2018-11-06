@@ -1,15 +1,15 @@
 Body{   
     margin:0;
     padding: 0;
-    background-color: black;
-    width: 100vh;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 // Social Bar
 .social_bar_global{
     position: fixed;
     left: 0;
     top : 270px;
+    z-index: 9999;
     .social_bar{
         display: flex;
         flex-direction: column;
@@ -54,7 +54,7 @@ Body{
             font-size: 1.2em;
             p{
                 position: relative;
-                top : -9px;
+                top : 10px;
             }
         }
         .logo1, .logo2, .logo3, .logo4, .logo5{
@@ -64,5 +64,102 @@ Body{
        
     }
 }
-//traking mouse
+//Featured movies
+.featured_global{
+    position: relative;
+   
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    .btn_global{
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px 0 0 0;
+        position: relative;
+        right : 13px;
+        .btnAll{
+            background-color: #FE4240 !important;
+            color: white;
+        } 
+        .btnFeatured{
+            background-color: #F3F1F2;
+            width: 100px;
+            height : 35px;
+            font-size: 1.2em;
+            text-align: center;
+            margin-left: 3px;
+            &:hover{
+                background-color: #FE4240;
+                color:white;
+            }
+        }       
+    }
+    .slideAction,
+    .slidePolicier,
+    .slideAction2,
+    .slidePolicier2{
+        display: flex;
+        flex-direction: row wrap;
+        justify-content: space-between !important;
+        width :100%; 
+        .card_featured{
+            display: flex;
+            flex-direction: column;
+            padding: 20px 5px 0px 5px;
+            text-align: center;
+            width : 10rem;
+            h3{
+                font-size: 1.2rem;  
+            }
+            p{
+                position: relative;
+                right : 73px;
+            }  
+        }
+          
+    }
+}
+.titre-section{
+    border-left: 7px solid #FE4240;
+    padding-left : 20px;
+    position: relative;
+    right: 150px;
+}
 
+.plusdefilm{
+    display: flex;
+    justify-content: center;
+   
+}
+.btnPlus{
+    background-color: #FE4240;
+    color: white !important;
+    width: 170px;
+    height : 35px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 30px;
+}
+@media only screen and (max-width: 450px){
+    .featured_global{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .titre-section{
+        border-left: 7px solid #FE4240;
+        padding-left : 20px;
+        position: relative;
+        right: 0;
+        font-size: 1.4em;
+        }
+        .slideAction,
+        .slidePolicier,
+        .slideAction2,
+        .slidePolicier2{
+            display: flex;
+            flex-direction: row wrap;
+            justify-content: center !important;
+            width :100%; 
+        }
+    }
+}

@@ -11,6 +11,7 @@ $(document).ready(function(){
     });
     $(".btnPlus").click(function(){   
         $(".slidePolicier2").fadeToggle("slow");
-        $(".slideAction2").fadeToggle("slow");    
+        $(".slideAction2").fadeToggle("slow");
+        $(".btnPlus").text("Plus de films");
     });
 });

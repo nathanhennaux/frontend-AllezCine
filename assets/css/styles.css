@@ -34,3 +34,18 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+
+.shop {
+  border-left: 7px solid #FE4240; }
+
+.btnC {
+  background-color: #FE4240;
+  color: white;
+  border: #FE4240 solid 2px; }
+  .btnC:hover {
+    background-color: white;
+    color: #FE4240;
+    border: #FE4240 solid 2px; }
+
+.bot {
+  margin-bottom: 10px; }

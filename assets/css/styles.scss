@@ -2,8 +2,40 @@ Body{
     margin:0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
+// modal18
+
+ .ui-widget-header{
+     display: none;
+     
+ }
+ .ui-button{
+     margin-left: 25px;
+     position: relative;
+     top:-15px;
+     left : -12px;
+     background-color: #F3F1F2; 
+ }
+ .ui-front{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #FE4240;
+    padding-top: 40px;
+    border: 2px solid white;
+    
+ }
+ .modal18{
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    
+ }
+ 
+
 // Social Bar
 .social_navbar{
     height: 500px;
@@ -179,7 +211,7 @@ Body{
         padding: 20px 0 0 0;
         position: relative;
         right : 28px;
-        .btnAll{
+        .btnAll, .btnAll3{
             background-color: #FE4240 !important;
             color: white;
         } 
@@ -199,7 +231,11 @@ Body{
     .slideAction,
     .slidePolicier,
     .slideAction2,
-    .slidePolicier2{
+    .slidePolicier2,
+    .slideAction3,
+    .slidePolicier3,
+    .slideAction4,
+    .slidePolicier4{
         display: flex;
         flex-direction: row wrap;
         justify-content: space-between !important;
@@ -231,7 +267,7 @@ Body{
     display: flex;
     justify-content: center; 
 }
-.btnPlus, .btnMoins{
+.btnPlus, .btnMoins, .btnPlus4{
     background-color: #FE4240;
     color: white !important;
     width: 170px;
@@ -260,7 +296,36 @@ Body{
             flex-direction: row wrap;
             justify-content: center !important;
             width :100%; 
-        }
-        
+        }    
     }
 }
+//Cookie
+.qc-cmp-button {
+    color: #000 !important;
+  }
+  .qc-cmp-ui,
+  .qc-cmp-ui .qc-cmp-main-messaging,
+  .qc-cmp-ui .qc-cmp-messaging,
+  .qc-cmp-ui .qc-cmp-beta-messaging,
+  .qc-cmp-ui .qc-cmp-title,
+  .qc-cmp-ui .qc-cmp-sub-title,
+  .qc-cmp-ui .qc-cmp-purpose-info,
+  .qc-cmp-ui .qc-cmp-table,
+  .qc-cmp-ui .qc-cmp-table-header,
+  .qc-cmp-ui .qc-cmp-vendor-list,
+  .qc-cmp-ui .qc-cmp-vendor-list-title {
+      color: #000 !important;
+  }
+  .qc-cmp-ui a,
+  .qc-cmp-ui .qc-cmp-alt-action {
+    color: #000 !important;
+  }
+  .qc-cmp-ui {
+      background-color: #FE4240 !important;
+  }
+  .qc-cmp-publisher-purposes-table .qc-cmp-table-header {
+    background-color: #fafafa !important;
+  }
+  .qc-cmp-publisher-purposes-table .qc-cmp-table-row {
+    background-color: #ffffff !important;
+  }

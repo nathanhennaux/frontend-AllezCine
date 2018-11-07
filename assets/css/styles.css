@@ -4,9 +4,50 @@ Body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.ui-widget-header {
+  display: none;
+}
+
+.ui-button {
+  margin-left: 25px;
+  position: relative;
+  top: -15px;
+  left: -12px;
+  background-color: #F3F1F2;
+}
+
+.ui-front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FE4240;
+  padding-top: 40px;
+  border: 2px solid white;
+}
+
+.modal18 {
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .social_navbar {
@@ -234,7 +275,7 @@ Body {
   right: 28px;
 }
 
-.featured_global .btn_global .btnAll {
+.featured_global .btn_global .btnAll, .featured_global .btn_global .btnAll3 {
   background-color: #FE4240 !important;
   color: white;
 }
@@ -256,7 +297,11 @@ Body {
 .featured_global .slideAction,
 .featured_global .slidePolicier,
 .featured_global .slideAction2,
-.featured_global .slidePolicier2 {
+.featured_global .slidePolicier2,
+.featured_global .slideAction3,
+.featured_global .slidePolicier3,
+.featured_global .slideAction4,
+.featured_global .slidePolicier4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,7 +318,11 @@ Body {
 .featured_global .slideAction .card_featured,
 .featured_global .slidePolicier .card_featured,
 .featured_global .slideAction2 .card_featured,
-.featured_global .slidePolicier2 .card_featured {
+.featured_global .slidePolicier2 .card_featured,
+.featured_global .slideAction3 .card_featured,
+.featured_global .slidePolicier3 .card_featured,
+.featured_global .slideAction4 .card_featured,
+.featured_global .slidePolicier4 .card_featured {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,14 +338,22 @@ Body {
 .featured_global .slideAction .card_featured h3,
 .featured_global .slidePolicier .card_featured h3,
 .featured_global .slideAction2 .card_featured h3,
-.featured_global .slidePolicier2 .card_featured h3 {
+.featured_global .slidePolicier2 .card_featured h3,
+.featured_global .slideAction3 .card_featured h3,
+.featured_global .slidePolicier3 .card_featured h3,
+.featured_global .slideAction4 .card_featured h3,
+.featured_global .slidePolicier4 .card_featured h3 {
   font-size: 1.2rem;
 }
 
 .featured_global .slideAction .card_featured .p_featured,
 .featured_global .slidePolicier .card_featured .p_featured,
 .featured_global .slideAction2 .card_featured .p_featured,
-.featured_global .slidePolicier2 .card_featured .p_featured {
+.featured_global .slidePolicier2 .card_featured .p_featured,
+.featured_global .slideAction3 .card_featured .p_featured,
+.featured_global .slidePolicier3 .card_featured .p_featured,
+.featured_global .slideAction4 .card_featured .p_featured,
+.featured_global .slidePolicier4 .card_featured .p_featured {
   position: relative;
 }
 
@@ -316,7 +373,7 @@ Body {
           justify-content: center;
 }
 
-.btnPlus, .btnMoins {
+.btnPlus, .btnMoins, .btnPlus4 {
   background-color: #FE4240;
   color: white !important;
   width: 170px;
@@ -360,5 +417,40 @@ Body {
             justify-content: center !important;
     width: 100%;
   }
+}
+
+.qc-cmp-button {
+  color: #000 !important;
+}
+
+.qc-cmp-ui,
+.qc-cmp-ui .qc-cmp-main-messaging,
+.qc-cmp-ui .qc-cmp-messaging,
+.qc-cmp-ui .qc-cmp-beta-messaging,
+.qc-cmp-ui .qc-cmp-title,
+.qc-cmp-ui .qc-cmp-sub-title,
+.qc-cmp-ui .qc-cmp-purpose-info,
+.qc-cmp-ui .qc-cmp-table,
+.qc-cmp-ui .qc-cmp-table-header,
+.qc-cmp-ui .qc-cmp-vendor-list,
+.qc-cmp-ui .qc-cmp-vendor-list-title {
+  color: #000 !important;
+}
+
+.qc-cmp-ui a,
+.qc-cmp-ui .qc-cmp-alt-action {
+  color: #000 !important;
+}
+
+.qc-cmp-ui {
+  background-color: #FE4240 !important;
+}
+
+.qc-cmp-publisher-purposes-table .qc-cmp-table-header {
+  background-color: #fafafa !important;
+}
+
+.qc-cmp-publisher-purposes-table .qc-cmp-table-row {
+  background-color: #ffffff !important;
 }
 /*# sourceMappingURL=styles.css.map */

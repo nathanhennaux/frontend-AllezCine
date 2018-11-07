@@ -2,72 +2,206 @@ Body{
     margin:0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
+// modal18
+
+ .ui-widget-header{
+     display: none;
+     
+ }
+ .ui-button{
+     margin-left: 25px;
+     position: relative;
+     top:-15px;
+     left : -12px;
+     background-color: #F3F1F2; 
+ }
+ .ui-front{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #FE4240;
+    padding-top: 40px;
+    border: 2px solid white;
+    
+ }
+ .modal18{
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    
+ }
+ 
+
 // Social Bar
-.social_bar_global{
-    position: fixed;
-    left: 0;
-    top : 270px;
+.social_navbar{
+    height: 500px;
     z-index: 9999;
-    .social_bar{
+    .social_global{
         display: flex;
         flex-direction: column;
+        position: fixed;
+        left: -120px;
+        top : 210px;
         align-items:flex-start;
+        width: 11%;
         padding:0;
-        li{
-            list-style-type: none;
-            margin:0;   
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            transition-property: transform, opacity;
-            transition-duration: 0.3s;
-            transition-timing-function: ease; /* Transition de type ease */ 
-            a{
-                text-decoration: none;
-            }
-        }
-        li:hover{
-            .text{
-                transform: translateX(50px);
-                transition: 0.3s;
-                opacity: 1;  
-            }
-        }
-        .fab, .fas{
-            font-size: 300%;
-            color: yellow;
-        }
-        .text{
-            background: black;
-            text-align: center;
-            position:relative;
-            left: -50px;
-            opacity: 0;
-            display: inline-block;
-            width:100px;
-            height: 48px;
-            font-family: cursive;
-            color: white;
-            font-size: 1.2em;
-            p{
-                position: relative;
-                top : 10px;
-            }
-        }
-        .logo1, .logo2, .logo3, .logo4, .logo5{
-            background-color: black;
-            padding-right: 5px;
-        }
-       
+    .social_link{
+        list-style-type: none;
+        padding:0px 0px 0px 0px;    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transition-property: transform, opacity;
+        transition-duration: 0.5s;
+        transition-timing-function: ease; /* Transition de type ease */ 
     }
+    .social_link:hover{
+        .text{
+            transform: translateX(110px);
+            transition: 0.5s;
+            opacity: 1;  
+        }
+    }
+    //twitter
+    .texttwitter{
+        background: #33CCFF;
+        text-align: center;
+        border-radius:  30px;
+        position:relative;
+        left: -60px;
+        opacity: 1;
+        display: flex;
+        width: 250px;
+        height: 60px;
+        font-family: cursive;
+        color: white;
+        font-size: 1.2em;
+        .ptwiter{
+            position: relative;
+            left: 90px;
+            top: 15px;
+        }
+        .fa-twitter{
+            font-size: 24px;
+            position: relative;
+            top: 5px;
+            left: 124px;
+            height: 50px;
+            color: black;
+            background-color: white;
+            padding: 10px 12px 0px 12px;
+            border-radius: 100px;
+            
+        }
+    }
+    //facebook
+    .textfacebook{
+        background: #3b5998;
+        text-align: center;
+        border-radius:  30px;
+        position:relative;
+        left: -60px;
+        opacity: 1;
+        display: flex;
+        width: 250px;
+        height: 60px;
+        font-family: cursive;
+        color: white;
+        font-size: 1.2em;
+        .pfacebook{
+            position: relative;
+            left: 80px;
+            top: 15px;
+        }
+        .fa-facebook-f{
+            font-size: 24px;
+            position: relative;
+            top: 5px;
+            left: 110px;
+            height: 50px;
+            color: black;
+            background-color: white;
+            padding: 10px 18px 0px 18px;
+            border-radius: 100px;
+            
+        }
+    } 
+    // Dribbble
+    .textdrib{
+        background: pink;
+        text-align: center;
+        border-radius:  30px;
+        position:relative;
+        left: -60px;
+        opacity: 1;
+        display: flex;
+        width: 250px;
+        height: 60px;
+        font-family: cursive;
+        color: white;
+        font-size: 1.2em;
+        .pdrib{
+            position: relative;
+            left: 80px;
+            top: 15px;
+        }
+        .fa-dribbble{
+            font-size: 24px;
+            position: relative;
+            top: 5px;
+            left: 117px;
+            height: 50px;
+            color: black;
+            background-color: white;
+            padding: 10px 12px 0px 12px;
+            border-radius: 100px;
+            
+        }
+    } 
+    //Google+
+    .textgg{
+        background: #DD4B39;
+        text-align: center;
+        border-radius:  30px;
+        position:relative;
+        left: -60px;
+        opacity: 1;
+        display: flex;
+        width: 250px;
+        height: 60px;
+        font-family: cursive;
+        color: white;
+        font-size: 1.2em;
+        .pgg{
+            position: relative;
+            left: 100px;
+            top: 15px;
+        }
+        .fa-google-plus-g{
+            font-size: 24px;
+            position: relative;
+            top: 5px;
+            left: 125px;
+            height: 50px;
+            color: black;
+            background-color: white;
+            padding: 10px 10px 10px 10px;
+            border-radius: 1000px;
+            
+        }
+    }   
 }
+}
+
 //Featured movies
 .featured_global{
     position: relative;
-   
+    margin: 20px 0 20px 0;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -76,8 +210,8 @@ Body{
         justify-content: flex-start;
         padding: 20px 0 0 0;
         position: relative;
-        right : 13px;
-        .btnAll{
+        right : 28px;
+        .btnAll, .btnAll3{
             background-color: #FE4240 !important;
             color: white;
         } 
@@ -97,7 +231,11 @@ Body{
     .slideAction,
     .slidePolicier,
     .slideAction2,
-    .slidePolicier2{
+    .slidePolicier2,
+    .slideAction3,
+    .slidePolicier3,
+    .slideAction4,
+    .slidePolicier4{
         display: flex;
         flex-direction: row wrap;
         justify-content: space-between !important;
@@ -111,12 +249,11 @@ Body{
             h3{
                 font-size: 1.2rem;  
             }
-            p{
+            .p_featured{
                 position: relative;
-                right : 73px;
+               
             }  
-        }
-          
+        }      
     }
 }
 .titre-section{
@@ -128,10 +265,9 @@ Body{
 
 .plusdefilm{
     display: flex;
-    justify-content: center;
-   
+    justify-content: center; 
 }
-.btnPlus{
+.btnPlus, .btnMoins, .btnPlus4{
     background-color: #FE4240;
     color: white !important;
     width: 170px;
@@ -160,6 +296,36 @@ Body{
             flex-direction: row wrap;
             justify-content: center !important;
             width :100%; 
-        }
+        }    
     }
 }
+//Cookie
+.qc-cmp-button {
+    color: #000 !important;
+  }
+  .qc-cmp-ui,
+  .qc-cmp-ui .qc-cmp-main-messaging,
+  .qc-cmp-ui .qc-cmp-messaging,
+  .qc-cmp-ui .qc-cmp-beta-messaging,
+  .qc-cmp-ui .qc-cmp-title,
+  .qc-cmp-ui .qc-cmp-sub-title,
+  .qc-cmp-ui .qc-cmp-purpose-info,
+  .qc-cmp-ui .qc-cmp-table,
+  .qc-cmp-ui .qc-cmp-table-header,
+  .qc-cmp-ui .qc-cmp-vendor-list,
+  .qc-cmp-ui .qc-cmp-vendor-list-title {
+      color: #000 !important;
+  }
+  .qc-cmp-ui a,
+  .qc-cmp-ui .qc-cmp-alt-action {
+    color: #000 !important;
+  }
+  .qc-cmp-ui {
+      background-color: #FE4240 !important;
+  }
+  .qc-cmp-publisher-purposes-table .qc-cmp-table-header {
+    background-color: #fafafa !important;
+  }
+  .qc-cmp-publisher-purposes-table .qc-cmp-table-row {
+    background-color: #ffffff !important;
+  }

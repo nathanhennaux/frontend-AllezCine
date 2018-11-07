@@ -64,5 +64,33 @@ Body{
        
     }
 }
+
+
+/*Pour coller le carrousel au top*/
+.jmb{
+    padding: 0px !important;  
+}
+
+// classe pour la barre
+
+.login-bar{
+ margin:0; padding:0;
+ background-color:#fe4240;
+ height:35px;
+ width:100%;
+}
+
+.fa-phone {color:#FFF;margin-left:20px; margin-top:8px;}
+.tel {color:#FFF; display:inline; padding-left: 5px;}
+
+.btn-sombre {margin-top:6px; margin-bottom:10px; border-radius:0px; 
+    height: 25px; font-size:10px; font-weight:bold; font-family:sans-serif;
+}
+
+.btn-red {background-color:#fe4240; color:#fff;  border-radius:0px; font-size: 0.7em; margin-bottom:70px;}
+.red-title {color:#fe4240; font-weight: bold;}
+.decaler {margin-left:25px;}
+.decaler-bas {margin-bottom:50px;}
+
 //traking mouse
 

@@ -53,3 +53,24 @@ margin-left: -65px;
 .bot{
     margin-bottom:10px;
 }
+
+.shopmovies{
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.movies{
+    margin-top:25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.sizemovies{
+    margin-right: -150px;
+}
+
+.sizepolice{
+    font-size: 0.8rem;
+}
